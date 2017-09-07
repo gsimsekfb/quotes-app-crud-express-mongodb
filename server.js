@@ -21,7 +21,8 @@ app.listen(3000, () => console.log('Info: listening on 3000'));
 
 // Connect to MongoDB
 let db;
-const MONGO_URL = 'mongodb://admin:admin@cluster0-shard-00-00-zismq.mongodb.net:27017,cluster0-shard-00-01-zismq.mongodb.net:27017,cluster0-shard-00-02-zismq.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin';
+// Put your MongoDB connection string URL into MONGO_URL.
+const MONGO_URL = 'mongodb://admin:admin@cluster0-shard-00-00-xx.mongodb.net:27017,cluster0-shard-00-01-xx.mongodb.net:27017,cluster0-shard-00-02-xx.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin';
 mongoClient.connect(MONGO_URL, (err, database) => {
     if (err)
       return console.log('Error: Failed to connect to db. ' + err);        
