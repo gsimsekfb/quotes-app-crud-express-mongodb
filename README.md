@@ -11,7 +11,23 @@ Educational, simple CRUD application with Express and MongoDB.
   <img src="screenshot.jpg" width="700">  
 </h1>
      
-#### Todos
+#### To Run this app:
+
+Go to Mongo Atlas website and deploy a DB with a collection named `quotes`.  
+In `server.js`, put your MongoDB connection string URL into `MONGO_URL`.
+
+````
+git clone ...
+npm install express --save
+npm install nodemon --save-dev
+npm install body-parser --save
+npm install mongodb --save
+npm install ejs --save
+npm start
+````
+
+
+#### Todos:
   - Add Update/Edit and Delete quotes features
     
 #### Note/References:  
